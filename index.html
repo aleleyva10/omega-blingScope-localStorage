@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Bling Scope Example</title>
+    <script src="vendors/angular.min.js" charset="utf-8"></script>
+    <script src="scripts/blingScope.js" charset="utf-8"></script>
+  </head>
+  <body ng-app='myApp'>
+    <h1>Bling Scope Example</h1>
+    <div ng-controller='TestController as tc'>
+      <button ng-click='tc.testClick()'>asdf</button>
+    </div>
+  </body>
+</html>
