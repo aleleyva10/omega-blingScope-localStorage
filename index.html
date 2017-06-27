@@ -8,8 +8,11 @@
   </head>
   <body ng-app='myApp'>
     <h1>Bling Scope Example</h1>
-    <div ng-controller='TestController as tc'>
-      <button ng-click='tc.testClick()'>asdf</button>
+    <div ng-controller='TestController'>
+      <button ng-click='testClick()'>asdf</button>
+      <p ng-repeat='x in things'>
+        {{ x }}
+      </p>
     </div>
   </body>
 </html>
