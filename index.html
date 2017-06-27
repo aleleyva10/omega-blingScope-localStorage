@@ -8,8 +8,11 @@
   </head>
   <body ng-app='myApp'>
     <h1>Bling Scope Example</h1>
-    <div ng-controller='TestController as tc'>
-      <button ng-click='tc.testClick()'>asdf</button>
+    <div ng-controller='TestController as tc' ng-init='tc.checkLogin()'>
+      <input type='text' ng-model='tc.nameIn' />
+      <button ng-click='tc.setLocalStorage()'>set</button>
+      <button ng-click='tc.showLocalStorage()'>show</button>
+      <button ng-click='tc.login()'>Log In</button>
     </div>
   </body>
 </html>
